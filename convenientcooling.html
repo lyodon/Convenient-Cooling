@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convenient Cooling | Appliance Repair & Maintenance</title>
+    <!-- Load Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for a clean, modern look -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cc-blue': '#0698B1', // Convenient Cooling brand color
+                        'cc-dark': '#0F172A', // Slate dark blue for text/background
+                        'cc-light': '#E0F7FA', // Light cyan background
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scroll behavior for internal links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-cc-light font-sans text-cc-dark">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 bg-white shadow-lg z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo/Brand Name -->
+            <div class="flex items-center space-x-2">
+                <!-- Icon: Snowflake/Cooling -->
+                <svg class="w-8 h-8 text-cc-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.942 3.313.804 2.457 2.389a1.724 1.724 0 00.584 2.502c1.458.75 1.458 2.22 0 2.97a1.724 1.724 0 00-.584 2.502c.856 1.585-.936 3.331-2.457 2.389a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.942-3.313-.804-2.457-2.389a1.724 1.724 0 00-.584-2.502c-1.458-.75-1.458-2.22 0-2.97a1.724 1.724 0 00.584-2.502c-.856-1.585.936-3.331 2.457-2.389a1.724 1.724 0 002.573-1.066z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+                <span class="text-2xl font-extrabold text-cc-dark tracking-tight">Convenient Cooling</span>
+            </div>
+
+            <!-- Call to Action Button (visible on desktop) -->
+            <a href="#contact" class="hidden md:block bg-cc-blue text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-cc-dark transition duration-300">
+                Request Service
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+
+        <!-- 1. Hero Section -->
+        <section class="bg-cc-dark text-white pt-16 pb-20 md:py-32 shadow-2xl">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">
+                    Expert Repair for <span class="text-cc-blue">Convenience Store Equipment</span>
+                </h1>
+                <p class="text-lg sm:text-xl mb-8 opacity-90 max-w-3xl mx-auto">
+                    We specialize in maintaining and repairing the vital refrigeration and beverage equipment that keeps your business running smoothly.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#services" class="bg-cc-blue hover:bg-cc-dark border border-cc-blue hover:border-white text-white font-bold py-3 px-8 rounded-lg shadow-xl transition duration-300 transform hover:scale-105">
+                        View Our Services
+                    </a>
+                    <a href="tel:443-718-0789" class="bg-transparent border border-white text-white font-bold py-3 px-8 rounded-lg shadow-xl transition duration-300 transform hover:scale-105 hover:bg-white hover:text-cc-dark">
+                        Call Now: 443-718-0789
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Specialties Section -->
+        <section id="specialties" class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-10 text-cc-dark">Equipment We Master</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    
+                    <!-- Refrigeration Column -->
+                    <div class="bg-cc-light p-6 rounded-xl shadow-lg border-t-4 border-cc-blue">
+                        <h3 class="text-2xl font-semibold mb-4 flex items-center text-cc-dark">
+                            <svg class="w-6 h-6 mr-2 text-cc-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c-2 3-4 4.5-4 4.5A5.003 5.003 0 0015 17a5.003 5.003 0 002.657-1.343z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22a9 9 0 100-18 9 9 0 000 18z"></path></svg>
+                            Refrigeration Equipment
+                        </h3>
+                        <ul class="space-y-3 list-none pl-0">
+                            <li class="flex items-start"><span class="text-cc-blue mr-2 font-bold text-xl">&bull;</span> Reach-In Display Refrigerators</li>
+                            <li class="flex items-start"><span class="text-cc-blue mr-2 font-bold text-xl">&bull;</span> Commercial Freezers (Walk-in & Stand-alone)</li>
+                            <li class="flex items-start"><span class="text-cc-blue mr-2 font-bold text-xl">&bull;</span> Ice Machines & Dispensers</li>
+                        </ul>
+                    </div>
+
+                    <!-- Beverage/Food Service Column -->
+                    <div class="bg-cc-light p-6 rounded-xl shadow-lg border-t-4 border-cc-blue">
+                        <h3 class="text-2xl font-semibold mb-4 flex items-center text-cc-dark">
+                            <svg class="w-6 h-6 mr-2 text-cc-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.526a2 2 0 01-1.789-2.894l3.5-7zM7 9H2V7a2 2 0 012-2h3"></path></svg>
+                            Convenience Store Essentials
+                        </h3>
+                        <ul class="space-y-3 list-none pl-0">
+                            <li class="flex items-start"><span class="text-cc-blue mr-2 font-bold text-xl">&bull;</span> Soda Fountain Machines & Dispensers</li>
+                            <li class="flex items-start"><span class="text-cc-blue mr-2 font-bold text-xl">&bull;</span> Slushy and Frozen Beverage Machines</li>
+                            <li class="flex items-start"><span class="text-cc-blue mr-2 font-bold text-xl">&bull;</span> Commercial Coffee Machines & Brewers</li>
+                            <li class="flex items-start"><span class="text-cc-blue mr-2 font-bold text-xl">&bull;</span> Various Commercial Ovens</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <!-- 3. Services Section -->
+        <section id="services" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12 text-cc-dark">Our Service Offerings</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Service Card 1: Emergency Repairs -->
+                    <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 border-b-4 border-red-500">
+                        <svg class="w-10 h-10 text-red-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <h3 class="text-xl font-bold mb-3">On-Demand Repairs</h3>
+                        <p class="text-gray-600">Quick, reliable repairs to get your critical equipment back up and running. Minimize downtime and prevent lost revenue with our expert diagnosis and fix.</p>
+                    </div>
+
+                    <!-- Service Card 2: Preventive Maintenance -->
+                    <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 border-b-4 border-yellow-500">
+                        <svg class="w-10 h-10 text-yellow-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        <h3 class="text-xl font-bold mb-3">Preventive Maintenance</h3>
+                        <p class="text-gray-600">Scheduled checks, cleaning, and tuning to extend the lifespan of your equipment, improve efficiency, and drastically reduce the risk of costly failures.</p>
+                    </div>
+
+                    <!-- Service Card 3: Annual Service Contracts -->
+                    <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 border-b-4 border-cc-blue">
+                        <svg class="w-10 h-10 text-cc-blue mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        <h3 class="text-xl font-bold mb-3">Service Contracts</h3>
+                        <p class="text-gray-600">Our annual service agreements offer priority scheduling, discounted labor rates, and comprehensive preventative care for total peace of mind.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Meet the Technician -->
+        <section class="py-16 bg-cc-light">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold mb-4 text-cc-dark">Meet Our Lead Technician</h2>
+                <div class="bg-white p-6 rounded-xl shadow-2xl border-t-4 border-cc-blue inline-block">
+                    <!-- Placeholder image for professional look -->
+                    <img src="https://placehold.co/120x120/0698B1/FFFFFF?text=RL" alt="Reuben Lyo" class="rounded-full mx-auto mb-4 border-4 border-cc-light">
+                    <h3 class="text-2xl font-semibold text-cc-dark">Reuben Lyo</h3>
+                    <p class="text-cc-blue font-medium mb-4">Lead Commercial Appliance Specialist</p>
+                    <p class="text-gray-600 max-w-lg mx-auto">Reuben brings years of specialized experience to every job, ensuring that your commercial freezers, ice machines, and beverage systems are repaired correctly the first time. Our quality is our guarantee.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Contact / Call to Action -->
+        <section id="contact" class="py-20 bg-cc-dark text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-extrabold mb-6">Need Immediate Service?</h2>
+                <p class="text-xl mb-8 opacity-80 max-w-3xl mx-auto">
+                    Contact us today for a repair quote, to schedule maintenance, or to discuss a custom annual service contract for your facility.
+                </p>
+
+                <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-8">
+                    <!-- Phone -->
+                    <div class="p-4 bg-cc-blue rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
+                        <span class="block text-sm font-light uppercase">Call Us Now</span>
+                        <a href="tel:443-718-0789" class="text-3xl font-bold tracking-wider">443-718-0789</a>
+                    </div>
+                    
+                    <!-- Email (UPDATED) -->
+                    <div class="p-4 bg-white text-cc-dark rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
+                        <span class="block text-sm font-light uppercase">Email for Contracts</span>
+                        <a href="mailto:convenientcoolingmaryland@gmail.com" class="text-3xl font-bold tracking-wider">convenientcoolingmaryland@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-cc-dark border-t border-cc-blue text-gray-300 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <p class="mb-3 md:mb-0">&copy; 2024 Convenient Cooling. All rights reserved.</p>
+            
+            <div class="flex flex-col md:flex-row items-center space-y-3 md:space-y-0 md:space-x-6">
+                <!-- Invoicing Payment Link: This link should point to your dedicated payment page (e.g., Stripe, QuickBooks, Square). -->
+                <a href="https://your-invoicing-service.com/pay" target="_blank" id="payment-link" class="text-white bg-green-600 hover:bg-green-700 font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300">
+                    Pay Your Invoice Here
+                </a>
+                
+                <p>Lead Technician: Reuben Lyo</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
